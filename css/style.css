@@ -279,7 +279,7 @@ html, body {
 
 #slide-container {
 	position:fixed;
-	top:90%;
+	bottom:0;
     width:100%;
 	height:8vh;
     background: #c0392b;
@@ -299,7 +299,7 @@ html, body {
 	width:100vw;
 }
 #github {
-	 top:90%;
+	 bottom:5;
 	 width:50%;
 	 height:4vh;
 	 left:10%;

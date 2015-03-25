@@ -50,13 +50,23 @@ body {
 	position: absolute;
 	background: #c0392b; 
 	z-index:10;
+	
+}
+
+#school-crest h1{
+	font-size: 9vw;
+	font-family: rockwell extra bold;
+	font-weight: 800;
+	text-align: center;
+	color: white;
+	margin: 0px;	
 }
 
 #school-crest img{
 	margin:auto;
 	display:block;	
-	width: 100%;
-	padding-top: 6%;
+	max-width: 100%;
+	padding-top: 15%;
 }
 
 /*right side container*/
@@ -65,7 +75,7 @@ body {
 	top:20vh;
 	left: 50vw;
     width:50vw;
-	height:25vh;
+	height:21vh;
     background: white;
     z-index:2;
     overflow: hidden;
@@ -73,22 +83,21 @@ body {
 }
 #right-side-container h1{
 	color: black;
-	font-size: 9.8vh;
+	font-size: 4.4vw;
 	margin: 0;
-	padding-left: 4%;
+	padding-left: 2%;
 	padding-top: 2%;
 	font-family: rockwell extra bold;
-	font-weight:800;
-
+	font-weight: 800;
 }
 
 #right-side-container p{
 	color: #c0392b;
-	font-size: 6.4vh;
+	font-size: 3vw;
 	margin: 0;
-	padding-left: 4%;
+	padding-left: 2%;
 	font-family: rockwell extra bold;
-	font-weight:800
+	font-weight: 800;
 
 
 }
@@ -107,12 +116,13 @@ body {
 }
 #right-side-container-2 p{
 	color: #000000;
-	font-size: 4.8vh;
+	font-size: 2vw;
 	margin: 0;
-	padding-left: 4%;
+	padding-left: 3%;
 	padding-top: 2%;
-	font-family: 'open-sans', sans-serif;
-
+	line-height: 3.3vw;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 600;
 }
 
 /*bottom container*/
@@ -129,7 +139,7 @@ body {
 /* text scroller */
 
 #first-content {
-    top:1vh;
+    top:1.5vh;
 	position: absolute;
     z-index:50;
     position: absolute;
@@ -158,8 +168,8 @@ body {
 
 /* Global Classes */
 .header-text {
-	font-family: 'open-sans', sans-serif;
-	font-size: 4.3vw;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 3.8vw;
 	color: #FFFFFF;
 	width:100vw;
 }
@@ -169,34 +179,166 @@ body {
 	font-weight: 600;
 }
 
-/* Media Queries 
-@media only screen and (max-width: 1270px) {
-	#first-container {
-		top:90%;
-	}
-	#second-container{
-		top:20%;
-    }
-    #third-container{
-		top:20%;
-    }
+/* Media Queries */
+
+/* ----------- Apple Watch ----------- */
+@media (max-device-width: 42mm) and (min-device-width: 38mm) { 
 
 }
 
-@media only screen and (min-width: 1280px) {
-	#first-container {
-		top:70vh;
-	}
-	#second-container{    
-		top:15%;
-	}
-	#third-container{    
-		top:15%;
-	}
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-width: 320px) and (max-width: 667px){
+#school-crest {
+	width: 10vw;
+	height: 10vh;
+	left: 5vw;
+	position: absolute;
+	background: #c0392b; 
+	z-index:10;
 	
 }
-*/
-	
+
+#school-crest h1{
+	font-size: 9vw;
+	font-family: rockwell extra bold;
+	font-weight: 800;
+	text-align: center;
+	color: white;
+	margin: 0px;	
+}
+/*right side container*/
+#right-side-container{
+	position:absolute;
+	top:20vh;
+	left: 0vw;
+    width:100vw;
+	height:10.5vh;
+    background: white;
+    z-index:2;
+    overflow: hidden;
+
+}
+#right-side-container h1{
+	color: black;
+	font-size: 4.4vw;
+	margin: 0;
+	padding-left: 5%;
+	padding-top: 2%;
+	font-family: rockwell extra bold;
+	font-weight: 800;
+}
+
+#right-side-container p{
+	color: #c0392b;
+	font-size: 3vw;
+	margin: 0;
+	padding-left: 5%;
+	font-family: rockwell extra bold;
+	font-weight: 800;
+
+
+}
+
+
+#right-side-container-2{
+	position:absolute;
+	top:28.5vh;
+	left: 0vw;
+    width:100vw;
+	height:48vh;
+    background: white;
+    z-index:2;
+    overflow: hidden;
+
+}
+#right-side-container-2 p{
+	color: #000000;
+	font-size: 2vw;
+	margin: 0;
+	padding-left: 5%;
+	padding-top: 0%;
+	line-height: 3.3vw;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 600;
+}
+
+#study-tips {
+	color: #000000;
+	font-size: 2vw;
+	margin: 0;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 0%;
+	line-height: 3.3vw;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 600;
+}
+
+
+
+#slide-container {
+	position:absolute;
+	top:92vh;
+    width:100%;
+	height:8vh;
+    background: #c0392b;
+    z-index:2;
+    overflow: hidden;
+}
+
+
+
+#first-content {
+	display: none;
+}
+.header-text {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 6vh;
+	color: #FFFFFF;
+	width:100vw;
+}
+#github {
+	 width:50%;
+	 height:4vh;
+	 left:10%;
+	 top:93.5vh;
+	 z-index:4;
+	 margin-left:-1%;
+	 position:absolute;
+	 z-index:4;
+}
+
+#gitbtn {
+	color:white;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;	
+	text-decoration: none;
+	font-size:3.6vh;
+	opacity:.5;
+	z-index:4;
+}
+/*
+#rise {
+	opacity:.5;
+	width:5%;
+	height:4vh;
+	left:5%;
+	top:90%;
+	z-index:5;
+	margin-left:-1%;
+	position:absolute;
+	z-index:5;
+}
+
+#risebtn {
+    width:auto; 
+    height:100%;   
+}*/
+
+}
+
+
 /* Footer Icons 
 #github {
 	 width:50%;

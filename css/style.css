@@ -181,13 +181,6 @@ body {
 
 /* Media Queries */
 
-/* ----------- Apple Watch ----------- */
-@media (max-device-width: 42mm) and (min-device-width: 38mm) { 
-
-}
-
-/* ----------- iPhone 5 and 5S ----------- */
-
 /* Portrait and Landscape */
 @media only screen and (min-width: 320px) and (max-width: 667px){
 #school-crest {
@@ -246,15 +239,16 @@ body {
 	position:absolute;
 	top:28.5vh;
 	left: 0vw;
-	width:100vw;
-	height:400px;
-	background: white;
+    	width:100vw;
+    	background: white;
     	z-index:2;
+    	overflow: hidden;
 
 }
+
 #right-side-container-2 p{
 	color: #000000;
-	font-size: 13pt;
+	font-size: 2vw;
 	margin: 0;
 	padding-left: 5%;
 	padding-top: 0%;
@@ -265,7 +259,7 @@ body {
 
 #study-tips {
 	color: #000000;
-	font-size: 12pt;
+	font-size: 2vw;
 	margin: 0;
 	padding-left: 5%;
 	padding-right: 5%;

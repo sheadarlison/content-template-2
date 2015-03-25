@@ -246,10 +246,9 @@ html, body {
 	top:28.5vh;
 	left: 0vw;
     	width:100vw;
-    	height:350px;
+    	height:100%;
     	background: white;
     	z-index:2;
-    	overflow: hidden;
 
 }
 
@@ -259,9 +258,9 @@ html, body {
 	margin: 0;
 	padding-left: 5%;
 	padding-top: 0%;
-	line-height: 3.3vw;
+	line-height: 3.6vw;
 	font-family: 'Helvetica', sans-serif;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 #study-tips {
@@ -271,9 +270,9 @@ html, body {
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-top: 0%;
-	line-height: 3.3vw;
+	line-height: 3.6vw;
 	font-family: 'Helvetica', sans-serif;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 
@@ -303,7 +302,6 @@ html, body {
 	 width:50%;
 	 height:4vh;
 	 left:10%;
-	 top:93.5vh;
 	 z-index:4;
 	 margin-left:-1%;
 	 position:absolute;

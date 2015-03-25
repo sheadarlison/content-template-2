@@ -307,6 +307,17 @@ display: none;
 	z-index:4;
 	overflow: scroll;
 }
+#desktop-version{
+	display: none;
+
+}
+.exam-tips{
+	display: none;
+}
+
+.products{
+	display: none;
+}
 /*
 #rise {
 	opacity:.5;

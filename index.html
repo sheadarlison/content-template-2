@@ -6,7 +6,6 @@
 <title>University | HTML Digital Signage Template</title>
 <meta name="description" content="The University Template was created to show news, events, and information to prospective and current students." />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <!-- Schema.org markup for Google+ -->
 <meta itemprop="name" content="University">
 <meta itemprop="description" content="The University Template was created to show news, events, and information to prospective and current students.">
@@ -36,6 +35,12 @@
 <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!--Web Components-->    
+<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+<link rel="import" href="bower_components/google-sheets/google-sheets.html">
+<link rel="import" href="bower_components/polymer/polymer.html">
+
 </head>
 
 <body>
@@ -52,6 +57,14 @@
 	<h1>R</h1>
 </div>
 
+    <!-- Published Spreadsheet Details -->
+<google-sheets id="sheet" 
+               key="1WwSkJbyIH4EgVDni9eI65zK95MBv0R5c6JSVXsGEPiE"
+               gid="0"
+               rows="{{rows}}"
+               published>
+</google-sheets>
+
 <!--right side container-->
 <div id="right-side-container">
 	<h1>Study week</h1>
@@ -65,30 +78,7 @@
 	</p>
 </div>
 
-<!-- this only shows on mobile-->
-<div id="study-tips">
-		<h1>Study week</h1>
-	<p><span style="color: #c0392b; font-family: rockwell extra bold; font-weight: 800; font-size:1.4em; !important">extended opening hours</span></p>
-	<p>June 2 to June 10 inclusive<br>
-		Monday to Friday 7am to 10pm<br>
-		Saturday and Sunday 9am to 5pm
-	</p>
-		<p>Exam tips:</p>
-		<ul>
-			<li>Personal coaching and workshops are available to help students with study skills.</li>
-			<li>A student ID card is required to write an exam.</li>
-			<li>Bring any necessary writing utensils (ie. pencils, pens, eraser, sharpener) to your exam.</li>
-			<li>Check the online exam schedule 24 hours before your exam to confirm your location.</li>
-			<li>The examination room is open 30 minutes before the scheduled start time of an exam.</li>
-			<li>Articles such as books, papers, etc. are not permitted in the examination room unless provision has been made by the examiner for reference books and materials to be allowed.</li>
-			<li>All electronic computing, data storage and communication devices must be turned off, placed and sealed in the provided opaque storage bag on the exam writing surface. Calculators may be used at the discretion of the instructor.</li>
-			<li>Personal items (ie. backpacks, laptops, etc) are not permitted in the examination room as we do not have a secure area for these items.</li>
-			<li>Contact the dean's/director's office of your faculty/school/college for assistance if you are scheduled for more than two exams on the same day.</li>
-		</ul>
-		<p>View your exam schedule here</p>
-</div>
-
-<!-- this only shows on desktop-->
+<!-- Shows on desktop and mobile-->
 <div id="desktop-version">
 		<h1>Rise University</h1>
 			<p>
@@ -115,23 +105,7 @@
 		        <p><a href="">learn More</a></p>
         	</div>
   		</div>      
-    <div class="exam-tips">  
-		<p><span style="color: #c0392b; font-family: rockwell extra bold; font-weight: 800; font-size:1.4em; !important">Exam tips:</a></p>
-		<ul>
-			<li>Personal coaching and workshops are available to help students with study skills.</li>
-			<li>A student ID card is required to write an exam.</li>
-			<li>Bring any necessary writing utensils (ie. pencils, pens, eraser, sharpener) to your exam.</li>
-			<li>Check the online exam schedule 24 hours before your exam to confirm your location.</li>
-			<li>The examination room is open 30 minutes before the scheduled start time of an exam.</li>
-			<li>Articles such as books, papers, etc. are not permitted in the examination room unless provision has been made by the examiner for reference books and materials to be allowed.</li>
-			<li>All electronic computing, data storage and communication devices must be turned off, placed and sealed in the provided opaque storage bag on the exam writing surface. Calculators may be used at the discretion of the instructor.</li>
-			<li>Personal items (ie. backpacks, laptops, etc) are not permitted in the examination room as we do not have a secure area for these items.</li>
-			<li>Contact the dean's/director's office of your faculty/school/college for assistance if you are scheduled for more than two exams on the same day.</li>
-		</ul>
-		<p>View your exam schedule here</p>
-	</div>
-</div>
-
+  </div>  
 
 
 <!--first slide-->

@@ -35,6 +35,12 @@
 <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!--Web Components-->    
+<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+<link rel="import" href="bower_components/google-sheets/google-sheets.html">
+<link rel="import" href="bower_components/polymer/polymer.html">
+
 </head>
 
 <body>
@@ -47,7 +53,17 @@
 <div id="gradient-container"></div>
 
 <!--School Crest-->
-<div id="school-crest"><img src="https://cloud.githubusercontent.com/assets/9273546/6827269/e3295fc6-d2dc-11e4-8144-183360cb0594.png"> </div>
+<div id="school-crest">
+	<h1>R</h1>
+</div>
+
+    <!-- Published Spreadsheet Details -->
+<google-sheets id="sheet" 
+               key="1WwSkJbyIH4EgVDni9eI65zK95MBv0R5c6JSVXsGEPiE"
+               gid="0"
+               rows="{{rows}}"
+               published>
+</google-sheets>
 
 <!--right side container-->
 <div id="right-side-container">
@@ -62,13 +78,40 @@
 	</p>
 </div>
 
-
+<!-- Shows on desktop and mobile-->
+<div id="desktop-version">
+		<h1>Rise University</h1>
+			<p>
+				<span style="color: #c0392b; font-family: rockwell extra bold; font-weight: 800; font-size:1.4em; !important">Upcoming Events and News
+				</span>
+			</p>
+	    <div class="products">
+        	<div>
+	          	<img src=""></img>
+		         <h1>Commerce Prom</h1>
+		         <p>What a great 4 years it's been! We've all worked hard and it's time to celebrate in style. Join the rest of your classmates for a black-tie evening filled with delicious food, dancing, and awards. </p>
+		         <p><a href="">learn More</a></p>
+		    </div>
+		    <div>
+		        <img src=""></img>
+		        <h1>International Food Festival</h1>
+		        <p>Come enjoy free food at the International Food Festival in Rowe 2068 on Tuesday, March 31. This is a catering event. </p>
+		        <p><a href="">learn More</a></p>
+		    </div>
+		    <div>
+		        <img src=""></img>
+		        <h1>McCain Foods Presentation</h1>
+		        <p>A McCain representative will be in the office to talk about McCain and possible job opportunities. Do not miss out on this great opportunity. Pizza and cake will be served!</p>
+		        <p><a href="">learn More</a></p>
+        	</div>
+  		</div>      
+  </div>  
 
 
 <!--first slide-->
 <div id="slide-container">
     <div id="first-content">
-        <span class="header-text">Nearly 80% of Rise University commerce co-op students get a job right out of school.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Save the date! Get ready for a classy evening! Comm Prom is Friday, March 27 at the Westin Hotel.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Happy Snow Day! This Tuesday March 24th McCain Foods will be here for Rowe Recess.</span>
+        <span class="header-text">Go to goo.gl/5wEa0Y on your phone to view exam tips and schedules&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; March 31st is The International Food Festival.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Save the date! Get ready for a classy evening! Comm Prom is Friday, March 27 at the Westin Hotel.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This Tuesday March 24th McCain Foods will be here for Rowe Recess.</span>
     </div> 
 </div>
 
